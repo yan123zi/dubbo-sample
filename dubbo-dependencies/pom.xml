@@ -16,6 +16,7 @@
     <modules>
         <module>../dubbo-domain</module>
         <module>../dubbo-commons</module>
+        <module>../dubbo-commons-mapper</module>
     </modules>
     <properties>
         <dubbo.version>0.2.0</dubbo.version>
@@ -24,6 +25,7 @@
         <springCloud.netflix-hystrix>2.1.1.RELEASE</springCloud.netflix-hystrix>
         <mybatis.version>2.0.0</mybatis.version>
         <mysql.version>5.1.38</mysql.version>
+        <druid.version>1.1.16</druid.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -46,6 +48,11 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
