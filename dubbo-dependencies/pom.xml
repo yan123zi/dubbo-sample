@@ -16,6 +16,8 @@
         <module>../dubbo-domain</module>
         <module>../dubbo-commons</module>
         <module>../dubbo-commons-mapper</module>
+        <module>../dubbo-databases</module>
+        <module>../dubbo-static-resources</module>
     </modules>
     <properties>
         <dubbo.version>0.2.0</dubbo.version>
