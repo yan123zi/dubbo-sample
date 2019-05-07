@@ -1,0 +1,16 @@
+package com.pxxy.service;
+
+import com.pxxy.beans.TbItemDesc;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ * <p>
+ * 商品描述表 服务类
+ * </p>
+ *
+ * @author yzj
+ * @since 2019-05-05
+ */
+public interface TbItemDescService extends IService<TbItemDesc> {
+
+}

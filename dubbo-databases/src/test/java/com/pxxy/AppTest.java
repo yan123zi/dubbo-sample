@@ -63,7 +63,7 @@ public class AppTest
         DataSourceConfig dataSourceConfig=new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)//设置数据库类型
                 .setDriverName("com.mysql.jdbc.Driver")
-                .setUrl("jdbc:mysql:///shop?useSSL=true")
+                .setUrl("jdbc:mysql:///myshop?useSSL=true")
                 .setUsername("root")
                 .setPassword("root")
         ;
