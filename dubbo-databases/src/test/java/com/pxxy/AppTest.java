@@ -2,12 +2,7 @@ package com.pxxy;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import com.baomidou.mybatisplus.generator.config.GlobalConfig;
-import com.baomidou.mybatisplus.generator.config.PackageConfig;
-import com.baomidou.mybatisplus.generator.config.StrategyConfig;
-import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import com.baomidou.mybatisplus.core.config.GlobalConfig;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -46,7 +41,7 @@ public class AppTest
     /**
      * 代码生成实例代码
      */
-    @org.junit.jupiter.api.Test
+    /*@org.junit.jupiter.api.Test
     public void testGenerator(){
         //全局配置
         GlobalConfig config=new GlobalConfig();
@@ -89,5 +84,5 @@ public class AppTest
                 .setStrategy(strategyConfig);
         //执行
         autoGenerator.execute();
-    }
+    }*/
 }

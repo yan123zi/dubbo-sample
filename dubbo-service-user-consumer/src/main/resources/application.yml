@@ -8,6 +8,11 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: WEB-INF/**
 server:
   port: 8601
 

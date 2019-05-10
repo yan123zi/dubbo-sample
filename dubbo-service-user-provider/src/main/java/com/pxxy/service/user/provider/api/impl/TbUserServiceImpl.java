@@ -1,6 +1,11 @@
 package com.pxxy.service.user.provider.api.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.pxxy.beans.TbUser;
 import com.pxxy.mapper.TbUserMapper;
 import com.pxxy.service.user.api.TbUserService;
@@ -22,4 +27,19 @@ public class TbUserServiceImpl implements TbUserService {
     public List<TbUser> selectAll() {
         return tbUserMapper.selectList(null);
     }
+    @Override
+    public PageInfo<TbUser> page(int pageNum, int pageSize) {
+
+        System.out.println(5);
+        /*Example example = new Example(TbUser.class);
+        example.createCriteria()
+                .andLike("username", username != null ? username + "%" : null)
+                .andLike("phone", phone != null ? phone + "%" : null)
+                .andLike("email", email != null ? email + "%" : null);*/
+        PageHelper.offsetPage(pageNum, pageSize);
+        PageInfo<TbUser> pageInfo = new PageInfo<TbUser>(tbUserMapper.selectList(null));
+
+        return pageInfo;
+    }
+
 }

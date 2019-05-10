@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
  * @author YZJ
  * @date 2019/5/6 - 19:09
  */
-@SpringBootApplication(scanBasePackages = "com.pxxy")
+@SpringBootApplication(scanBasePackages = "com.pxxy",exclude = DataSourceAutoConfiguration.class)
 @EnableHystrixDashboard
 @EnableHystrix
 public class MyShopServiceUserConsumerApplication {
