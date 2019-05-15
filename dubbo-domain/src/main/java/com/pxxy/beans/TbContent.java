@@ -20,7 +20,7 @@ import java.util.Date;
 @Data
 public class TbContent extends Model<TbContent> implements Serializable{
 
-private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = -8952387944810873386L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;

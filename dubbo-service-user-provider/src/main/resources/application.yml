@@ -19,9 +19,10 @@ spring:
         max-idle: 8
         max-wait: -1ms
         min-idle: 0
+      shutdown-timeout: 10000
     sentinel:
       master: mymaster
-      nodes: 192.168.10.131:26379, 192.168.10.131:26380, 192.168.10.131:26381
+      nodes: 192.168.149.133:26379, 192.168.149.133:26380, 192.168.149.133:26381
   devtools:
     restart:
       enabled: true
@@ -34,6 +35,7 @@ server:
 mybatis-plus:
   configuration:
     cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   type-aliases-package: com.pxxy.beans
   mapper-locations: classpath:mapper/*.xml
 

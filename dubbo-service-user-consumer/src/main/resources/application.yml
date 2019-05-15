@@ -25,7 +25,7 @@ services:
 # Dubbo Config properties
 dubbo:
   scan:
-    basePackages: com.pxxy.service.user.consumer.controller
+    basePackages: com.pxxy.service.user.consumer
   ## ApplicationConfig Bean
   application:
     id: myshop-service-user-consumer

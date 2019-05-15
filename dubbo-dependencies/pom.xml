@@ -22,16 +22,25 @@
         <module>../dubbo-service-user-api</module>
         <module>../dubbo-service-user-provider</module>
         <module>../dubbo-service-user-consumer</module>
+        <module>../dubbo-service-content-api</module>
+        <module>../dubbo-service-content-provider</module>
+        <module>../dubbo-service-content-consumer</module>
+        <module>../dubbo-api-gateway</module>
+        <module>../dubbo-service-upload</module>
+        <module>../dubbo-service-redis-api</module>
+        <module>../dubbo-service-redis-provider</module>
+        <module>../dubbo-service-search-api</module>
+        <module>../dubbo-service-search-provider</module>
     </modules>
     <properties>
         <dubbo.version>0.2.0</dubbo.version>
         <curator.version>2.12.0</curator.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.12</junit.version>
         <springCloud.netflix-hystrix>2.1.0.RELEASE</springCloud.netflix-hystrix>
         <mysql.version>5.1.38</mysql.version>
         <druid.version>1.1.16</druid.version>
         <kyro.version>0.42</kyro.version>
-        <fastdfs.version>1.27-RELEASE</fastdfs.version>
+        <fastdfs.version>1.27-SNAPSHOT</fastdfs.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -99,6 +108,7 @@
             <dependency>
                 <groupId>org.csource</groupId>
                 <artifactId>fastdfs-client-java</artifactId>
+                <version>${fastdfs.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
