@@ -8,10 +8,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dubbo-service-search-provider</artifactId>
+    <artifactId>dubbo-service-search-consumer</artifactId>
     <packaging>jar</packaging>
 
-    <name>dubbo-service-search-provider</name>
+    <name>dubbo-service-search-consumer</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -24,26 +24,31 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-solr</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.pxxy</groupId>
-            <artifactId>dubbo-service-search-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+        <!-- Spring Boot Starter Settings -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
+
+        <!-- Commons Settings -->
         <dependency>
             <groupId>de.javakaffee</groupId>
             <artifactId>kryo-serializers</artifactId>
         </dependency>
         <dependency>
             <groupId>com.pxxy</groupId>
-            <artifactId>dubbo-commons-mapper</artifactId>
+            <artifactId>dubbo-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pxxy</groupId>
+            <artifactId>dubbo-static-resources</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pxxy</groupId>
+            <artifactId>dubbo-service-search-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
@@ -53,7 +58,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.pxxy.service.search.provider.MyShopServiceSearchConsumerApplication</mainClass>
+                    <mainClass>com.pxxy.service.search.consumer.MyShopServiceSearchConsumerApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

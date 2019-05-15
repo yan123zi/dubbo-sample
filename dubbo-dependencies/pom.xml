@@ -31,6 +31,7 @@
         <module>../dubbo-service-redis-provider</module>
         <module>../dubbo-service-search-api</module>
         <module>../dubbo-service-search-provider</module>
+        <module>../dubbo-service-search-consumer</module>
     </modules>
     <properties>
         <dubbo.version>0.2.0</dubbo.version>

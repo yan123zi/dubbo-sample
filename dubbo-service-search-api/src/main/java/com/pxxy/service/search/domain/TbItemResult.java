@@ -10,9 +10,10 @@ import java.io.Serializable;
  */
 @Data
 public class TbItemResult implements Serializable {
-    private long id;
-    private long tb_item_cid;
-    private String tb_item_cname;
-    private String tb_item_title;
-    private String tb_item_sell_point;
+    private Long id;
+    private Long tbItemCid;
+    private String tbItemCname;
+    private String tbItemTitle;
+    private String tbItemSellPoint;
+    private String tbItemDesc;
 }
